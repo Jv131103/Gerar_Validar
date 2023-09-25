@@ -56,3 +56,48 @@ cpf = "123.456.789-09"
 analisar_cpf(cpf)
 ```
 Este código Python é uma ferramenta útil para obter informações sobre os estados brasileiros e verificar a validade de números de CPF.
+
+# Gerador de CPF Brasileiro
+
+Este código Python gera números de CPF brasileiro válidos. Este código é fornecido apenas para fins acadêmicos e não deve ser usado de forma ilegal ou antiética.
+
+## Funcionamento
+
+O código consiste em várias funções que geram números de CPF. Aqui está uma visão geral das funções principais:
+
+- `gerar8digitos()`: Gera os 8 primeiros dígitos do CPF aleatoriamente.
+
+- `gerarNonoDigito(escolher=None)`: Gera o nono dígito do CPF de acordo com a norma governamental ou permite que você escolha um estado específico (por sigla) para o nono dígito.
+
+- `gerar_primeiro_digito(l)`: Gera o primeiro dígito verificador do CPF com base nos 8 primeiros dígitos.
+
+- `gerar_segundo_digito(l, digito1)`: Gera o segundo dígito verificador do CPF com base nos 8 primeiros dígitos e no primeiro dígito verificador.
+
+## Uso
+
+Para usar o gerador de CPF, você pode simplesmente executar o código Python. Ele gera um número de CPF válido e exibe-o no console.
+
+Exemplo de uso:
+
+```python
+python gerador_cpf.py
+==============================================
+|    CPF criado com êxito!                   |
+|    Lembre-se, isso aqui é para fins        |
+|    acadêmicos                              |
+|============================================|
+|                                            |
+| LINHA DE GERADOR SEM PONTO: 12345678909    |
+|____________________________________________|
+|                                            |
+| LINHA DE GERADOR COM EDIÇÃO: 123.456.789-09|
+|                                            |
+==============================================
+```
+
+##Aviso
+
+Este código é apenas para fins acadêmicos e não deve ser usado para fins ilegais ou antiéticos, como falsificação de CPF. Respeite todas as leis e regulamentações locais ao usar este código.
+
+Nota: Os CPFs gerados por este código são válidos na estrutura, mas não têm nenhuma associação com pessoas reais. Eles são gerados aleatoriamente apenas para fins de demonstração e aprendizado.
+
