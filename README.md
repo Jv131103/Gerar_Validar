@@ -1,9 +1,9 @@
 # Gerar_Validar
 Gerador de CPF e Validador de CPF/CNPJ
 
-# Informações sobre Estados
+## Informações sobre Estados e Validador de CPF
 
-Este código Python contém informações sobre os estados brasileiros, incluindo suas siglas e nomes completos. Ele também inclui uma função para verificar a qual estado pertence um número de base estadual.
+Este código Python contém informações sobre os estados brasileiros, incluindo suas siglas e nomes completos. Além disso, ele inclui um validador de CPF que verifica a validade de um número de CPF inserido.
 
 ## Estados
 
@@ -30,7 +30,8 @@ ESTADOS = {
     }
 }
 ```
-O código também inclui funções para verificar a qual estado pertence um número de base estadual e para buscar informações sobre os estados.
+O código inclui funções para verificar a qual estado pertence um número de base estadual e para buscar informações sobre os estados.
+
 ```python
 # Verificar o estado para a base estadual "1"
 resultado = verificar_estado("1", ESTADOS)
@@ -43,4 +44,15 @@ print(info_estado)
 # Saída: ["BA", "SE"]
 ```
 
-Este Projeto futuramente será integrado a `WEB`
+## Validador de CPF
+
+Além das informações sobre estados, o código inclui um validador de CPF que verifica a validade de um número de CPF inserido.
+
+Exemplo de uso:
+
+```python
+# Verificar a validade de um CPF
+cpf = "123.456.789-09"
+analisar_cpf(cpf)
+```
+Este código Python é uma ferramenta útil para obter informações sobre os estados brasileiros e verificar a validade de números de CPF.
