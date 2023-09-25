@@ -95,9 +95,36 @@ python gerador_cpf.py
 ==============================================
 ```
 
-##Aviso
+## Aviso
 
 Este código é apenas para fins acadêmicos e não deve ser usado para fins ilegais ou antiéticos, como falsificação de CPF. Respeite todas as leis e regulamentações locais ao usar este código.
 
 Nota: Os CPFs gerados por este código são válidos na estrutura, mas não têm nenhuma associação com pessoas reais. Eles são gerados aleatoriamente apenas para fins de demonstração e aprendizado.
 
+# Validador de CPF e CNPJ
+
+Este código Python permite validar números de CPF (Cadastro de Pessoa Física) e CNPJ (Cadastro Nacional da Pessoa Jurídica). Ele verifica se os números estão em conformidade com as regras de formação de CPF e CNPJ no Brasil.
+
+## Funcionamento
+
+O código possui uma classe chamada `ValidarCadastro` que contém métodos para validar CPF e CNPJ. Aqui estão os principais métodos:
+
+- `ValidarCPF()`: Valida um número de CPF, verificando se ele atende aos critérios de formação de CPF, incluindo os dígitos verificadores.
+
+- `ValidarCNPJ()`: Valida um número de CNPJ, verificando se ele atende aos critérios de formação de CNPJ, incluindo os dígitos verificadores.
+
+## Uso
+
+Para usar o código, crie uma instância da classe `ValidarCadastro` com um número de CPF ou CNPJ como argumento e chame o método apropriado para validar o número. Por exemplo:
+
+```python
+x = ValidarCadastro("00018558955360")  # Isto é um CPF gerado automaticamente pelo nosso gerador de CPF
+print(x.ValidarCNPJ())
+
+y = ValidarCadastro("07373002000175")  # CNPJ de uma empresa puxado via pesquisa na web
+print(y.ValidarCNPJ())
+```
+
+O código retornará "CPF" se o número for válido como CPF, "CNPJ" se for válido como CNPJ ou uma mensagem de erro se não for válido como nenhum dos dois.
+
+Nota: Os CPFs usados nos exemplos são apenas para fins de demonstração e aprendizado. Eles não têm nenhuma associação com pessoas ou empresas reais.
